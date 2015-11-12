@@ -1,0 +1,2 @@
+# jqueryDaily
+Learn it Daily
