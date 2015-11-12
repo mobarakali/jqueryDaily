@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 03</title>
+    <style>
+        .gold{
+            background: gold;
+            padding: 10px;
+        }
+        .green{
+            background: #005500;
+        }
+        ul li{
+            color:green;
+            font-weight: bold;
+        }
+        ul.selected > li{
+            font-weight: normal;
+            color: #000;
+        }
+    </style>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('ul.selected').css({'border': '10px solid gold', 'padding': '10px', 'margin':'50px'});
+
+        // selects children of an element
+        $('ul.selected').children('li:first-child').css('color','pink');
+
+        // find and select when not sure how to select!
+        $('ul.selected').find('li:nth-child(1) a').addClass('gold');
+
+        // find and select when not sure how to select!
+        $('ul.selected').find('li').eq(-1).addClass('green');
+
+           });
+
+    </script>
+</head>
+<body>
+<h1>Heading</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+    amet at deserunt dolore dolorum iusto quidem ut. Consequuntur, delectus
+    voluptatem. Accusantium consectetur consequuntur expedita, obcaecati
+    optio perferendis repudiandae tenetur voluptatem.</p>
+<ul class="selected">
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3
+        <ul>
+            <li><a href="">sub list 1</a></li>
+            <li>sub list 2</li>
+            <li><a href="">sub list 3</a></li>
+            <li><a href="">sub list 4</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
