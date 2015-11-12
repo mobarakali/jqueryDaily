@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 02</title>
+    <style>
+        .h1{
+            color:lightslategray;
+            font-weight: bolder;
+            font-size: 40px;;
+        }
+        .sub-heading{
+            background-color: lightslategray;
+            display: table;
+            margin: 0 auto;
+            padding: 25px;
+            font-weight: bolder;
+            font-size: 20px;
+            color: ivory;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").addClass('sub-heading');
+        });
+    </script>
+
+</head>
+<body>
+<h1>Lesson 02</h1>
+<p>jQuery is ready to run!</p>
+<ol>
+    <li>List 01</li>
+</ol>
+
+
+
+<script type="text/javascript">
+    $('li').css("color", "red");
+    $('h1').addClass('h1');
+</script>
+</body>
+</html>
