@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>.ready()</title>
 </head>
 
 <body>
+    <a href="Click Me!"></a>
     <script>
         $(document).ready(function() {
-            alert("jQuery Ready!");
+            $("a").click(function(event) {
+                alert("jQuery is Working!");
+            });
         });
 
     </script>
