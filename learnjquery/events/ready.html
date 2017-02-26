@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>.ready()</title>
+    <script src="../../assets/js/jquery-3.1.1.js"></script>
 </head>
 
 <body>
-    <a href="Click Me!"></a>
+    <a href="#">Click me!</a>
     <script>
         $(document).ready(function() {
             $("a").click(function(event) {
                 alert("jQuery is Working!");
+                event.preventDefault();
             });
         });
 
     </script>
 
-    <script src="../../assets/js/jquery-3.1.1.js"></script>
 </body>
 
 </html>
