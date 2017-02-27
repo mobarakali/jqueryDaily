@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adding and Removing an HTML Class</title>
+    <style>
+        .redText {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Adding and Removing an HTML Class</h1>
+    <button id="add">Add Class</button>
+    <button id="remove">Remove Class</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button#add").click(function() {
+                $("h1").addClass("redText");
+            });
+            $("button#remove").click(function() {
+                $("h1").removeClass("redText");
+            })
+        });
+
+    </script>
+</body>
+
+</html>

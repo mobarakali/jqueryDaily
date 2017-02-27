@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Special Effects</title>
+    <style>
+        .redText {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Special Effects</h1>
+    <a href="http://learn.jquery.com"> Learn jQuery!</a>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("h1").click(function() {
+                $("h1").addClass("redText");
+            });
+            $("button").click(function() {
+                $("h1").removeClass("redText");
+            })
+        });
+
+    </script>
+</body>
+
+</html>
