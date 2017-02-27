@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <a href="http://jquery.com">jQuery</a>
+    <a href="http://learn.jquery.com">Learn jQuery</a>
     <script src="jquery.js"></script>
     <script>
         // your code here...
@@ -18,10 +18,11 @@
 
         $(document).ready(function() {
             //alert("Welcome!");
-            $("a").click(function() {
-                alert("jQuery is ")
-            })
-        })
+            $("a").click(function(event) {
+                alert("jQuery is ");
+                event.preventDefault(); // cliking link will not work!
+            });
+        });
 
     </script>
 </body>
