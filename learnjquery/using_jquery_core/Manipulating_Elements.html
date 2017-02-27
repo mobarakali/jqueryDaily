@@ -8,14 +8,18 @@
 
 <body>
     <h1>Working with Selections</h1>
+    <div id="myDiv">
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>Third Paragraph</p>
+        <p>Fourth Paragraph</p>
+        <p>Fifth Paragraph</p>
+    </div>
     <script src="../jquery.js"></script>
     <script>
-        var x = $("h1");
-        x.html();
-        console.log(x);
-        // Chiaing
-        $("h1").html("New Heading ").addClass("news");
-        x.css("color", "Red");
+        /// Changing the HTML of an element.
+        //$("#myDiv p:first").html("New <strong>first</strong> paragraph!");
+        $("#myDiv p:first").html("This is first paragraphg inside the div.");
     </script>
 
 
