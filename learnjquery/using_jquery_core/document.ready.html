@@ -7,14 +7,40 @@
 </head>
 
 <body>
+    <h1>Using JQuery Core</h1>
+    <h3>$( document ).ready()</h3>
 
     <script src="../jquery.js"></script>
     <script>
-        $(document).ready(function() {
-            alert("jQuery is Ready to work!");
-        })
+        // it will load after the iframe is fully loaded!
+        $(window).on("load", function() {
+            console.log("window loaded");
+        });
+        // conventional way
+        //        $(document).ready(function() {
+        //            alert("jQuery is Ready to work!");
+        //        });
+
+        // Shorthand for $(document).ready()
+
+        // $(function() {
+        // alert("jQuery is Ready to work!");
+        // });
+
+        // Passing named function insted of anonymous function
+        function jQueryIsReaday(jQuery) {
+            console.log("jQuery is Ready to work!");
+        }
+        //$(document).ready(jQueryIsReaday);
+
+        // or
+        $(function() {
+            jQueryIsReaday();
+        });
 
     </script>
+
+    <iframe src="http://techcrunch.com"></iframe>
 </body>
 
 </html>
