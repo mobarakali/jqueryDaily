@@ -21,7 +21,7 @@
         <p>Second Paragraph</p>
         <p>Third Paragraph</p>
         <p>Fourth Paragraph</p>
-        <p>Fifth Paragraph</p>
+        <p>Fifth Paragraph <a href="ready.html">simple link to another file! </a></p>
     </div>
     <div id="para1"></div>
     <script src="../jquery.js"></script>
@@ -94,15 +94,32 @@
         lists.append(items.join(""));
 
 
-        /*Manipulating Attributes*/
-
-        //maipulating a single attribute
         var l = $("#myList");
         var val = l.html();
         l.empty();
         // adding ordered list
         $("#myList").append("<ol>");
         $("#myList ol").append(val);
+
+        /*Manipulating Attributes*/
+
+        //maipulating a single attribute
+        //makes the 1st li red
+        $("#myList li:first").attr("style", "color:red");
+
+        //manipulating multiple attributes
+        $("#myList li").eq(4).attr({
+            style: "color:#f00; font-weight:bold",
+            title: "Item #5"
+        });
+
+        //using a function to determine an attribute's new value.
+        $("#myDiv p a:first").attr({
+            title: "This is Item 01",
+            href: function(idx, href) {
+                return "../events/" + href;
+            }
+        });
 
     </script>
 
