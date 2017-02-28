@@ -93,6 +93,17 @@
         var lists = $("#myList");
         lists.append(items.join(""));
 
+
+        /*Manipulating Attributes*/
+
+        //maipulating a single attribute
+        var l = $("#myList");
+        var val = l.html();
+        l.empty();
+        // adding ordered list
+        $("#myList").append("<ol>");
+        $("#myList ol").append(val);
+
     </script>
 
 
