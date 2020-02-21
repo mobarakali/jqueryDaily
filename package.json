@@ -1,0 +1,23 @@
+{
+  "name": "jquerydaily",
+  "version": "1.0.0",
+  "description": "Learn it Daily\r Your site is published at http://mobarakali.github.io/jqueryDaily/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobarakali/jqueryDaily.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mobarakali/jqueryDaily/issues"
+  },
+  "homepage": "https://github.com/mobarakali/jqueryDaily#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  }
+}
